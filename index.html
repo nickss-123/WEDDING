@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joo Ann &amp; Alvin — Our Wedding</title>
+<meta name="description" content="Join us for the wedding of Joo Ann &amp; Alvin — February 14, 2027, Tagaytay.">
+<meta name="theme-color" content="#223527">
+<meta property="og:title" content="Joo Ann &amp; Alvin — Our Wedding">
+<meta property="og:description" content="February 14, 2027 · Tagaytay, Philippines. RSVP and see all the details.">
+<meta property="og:type" content="website">
+
+<!-- ============================================================
+     FONTS
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="premium.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <a href="#top" class="nav-mark" id="navMark">Joo Ann &amp; Alvin</a>
+    <ul class="nav-links">
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#details">Details</a></li>
+      <li><a href="#entourage">Entourage</a></li>
+      <li><a href="#attire">Attire</a></li>
+      <li><a href="#gifts">Gifts</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <button class="close" id="navClose" aria-label="Close menu">&times;</button>
+  <a href="#story">Our Story</a>
+  <a href="#details">Details</a>
+  <a href="#entourage">Entourage</a>
+  <a href="#attire">Attire</a>
+  <a href="#gifts">Gifts</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#faq">FAQ</a>
+  <a href="#rsvp">RSVP</a>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<header class="hero" id="top">
+  <svg class="hero-leaf a" viewBox="0 0 100 200" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M50 5 C10 40 10 140 50 195 C90 140 90 40 50 5Z"/><path d="M50 5 L50 195" stroke-width=".8"/></svg>
+  <svg class="hero-leaf b" viewBox="0 0 100 200" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M50 5 C10 40 10 140 50 195 C90 140 90 40 50 5Z"/><path d="M50 5 L50 195" stroke-width=".8"/></svg>
+  <svg class="hero-leaf c" viewBox="0 0 100 200" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M50 5 C10 40 10 140 50 195 C90 140 90 40 50 5Z"/><path d="M50 5 L50 195" stroke-width=".8"/></svg>
+
+  <span class="hero-eyebrow" id="heroEyebrow">Together With Their Families</span>
+  <h1 id="heroNames">Joo Ann <span class="amp">&amp;</span> Alvin</h1>
+  <p class="hero-sub" id="heroSub">are getting married — <strong id="heroDateText">February 14, 2027</strong></p>
+
+  <div class="countdown" id="countdown">
+    <div class="unit"><span class="num" id="cd-days">00</span><span class="label">Days</span></div>
+    <span class="colon">:</span>
+    <div class="unit"><span class="num" id="cd-hours">00</span><span class="label">Hours</span></div>
+    <span class="colon">:</span>
+    <div class="unit"><span class="num" id="cd-mins">00</span><span class="label">Minutes</span></div>
+    <span class="colon">:</span>
+    <div class="unit"><span class="num" id="cd-secs">00</span><span class="label">Seconds</span></div>
+  </div>
+
+  <div class="hero-cta">
+    <a href="#rsvp" class="btn btn-solid">RSVP Now</a>
+    <a href="#details" class="btn">View Details</a>
+  </div>
+</header>
+
+<!-- ============================================================
+     OUR STORY / TIMELINE
+     ============================================================ -->
+<section class="section" id="story">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Story</span>
+      <h2>How We Got Here</h2>
+      <p>A few of the moments along the way.</p>
+    </div>
+    <div class="timeline" id="timeline"><!-- populated by JS from CONFIG.timeline --></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DETAILS
+     ============================================================ -->
+<section class="section section-alt" id="details">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Save The Date</span>
+      <h2>Ceremony &amp; Reception</h2>
+    </div>
+    <div class="details-grid" id="detailsGrid"><!-- populated by JS --></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ENTOURAGE / GUESTS (Filipino tradition)
+     ============================================================ -->
+<section class="section" id="entourage">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Filipino Wedding Tradition</span>
+      <h2>Principal Sponsors &amp; Entourage</h2>
+      <p>Every ninong, ninang, and sponsor plays a symbolic role in the ceremony — a tradition we're honored to carry on.</p>
+    </div>
+    <div class="role-groups" id="roleGroups"><!-- populated by JS --></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ATTIRE
+     ============================================================ -->
+<section class="section section-alt" id="attire">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Dress Code</span>
+      <h2>What To Wear</h2>
+      <p>Our palette for the day — dress within these tones and you'll fit right into every photo.</p>
+    </div>
+    <div class="attire-grid" id="attireGrid"><!-- populated by JS --></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GIFTS
+     ============================================================ -->
+<section class="section" id="gifts">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Registry</span>
+      <h2>Gift Ideas</h2>
+    </div>
+    <p class="gift-note" id="giftNote">Your presence at our wedding is the greatest gift of all. For those who wish to give further, here are a few thoughtful ideas.</p>
+    <div class="gift-grid" id="giftGrid"><!-- populated by JS --></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY
+     ============================================================ -->
+<section class="section section-alt" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Moments</span>
+      <h2>Gallery</h2>
+      <p>Tap any photo to view it larger.</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"><!-- populated by JS --></div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Good To Know</span>
+      <h2>Questions</h2>
+      <p>Answered right here — tap any question to expand it.</p>
+    </div>
+    <div class="faq-list" id="faqList"><!-- populated by JS --></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RSVP
+     ============================================================ -->
+<section class="section section-alt" id="rsvp">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Kindly Respond</span>
+      <h2>RSVP</h2>
+      <p id="rsvpDeadline">Please respond by January 10, 2027.</p>
+    </div>
+
+    <div class="rsvp-wrap">
+      <form id="rsvpForm">
+        <div class="form-row">
+          <div class="field">
+            <label for="r-name">Full Name</label>
+            <input type="text" id="r-name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="r-email">Email</label>
+            <input type="email" id="r-email" name="email" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Will you be attending?</label>
+          <div class="radio-group">
+            <label class="radio-pill"><input type="radio" name="attending" value="Joyfully Accepts" checked><span>Joyfully Accepts</span></label>
+            <label class="radio-pill"><input type="radio" name="attending" value="Regretfully Declines"><span>Regretfully Declines</span></label>
+          </div>
+        </div>
+
+        <div class="collapse" id="guestFields"><div>
+        <div class="form-row">
+          <div class="field">
+            <label for="r-guests">Number of Guests</label>
+            <select id="r-guests" name="guests">
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="r-dietary">Dietary Restrictions</label>
+            <input type="text" id="r-dietary" name="dietary" placeholder="e.g. Vegetarian, none">
+          </div>
+        </div>
+        </div></div>
+
+        <div class="field">
+          <label for="r-message">Message For The Couple (optional)</label>
+          <textarea id="r-message" name="message" placeholder="Leave a note, well-wish, or song request..."></textarea>
+        </div>
+
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="btn btn-solid rsvp-submit" id="rsvpSubmitBtn">Send RSVP</button>
+        <p class="rsvp-msg" id="rsvpMsg"></p>
+      </form>
+      <p class="rsvp-alt">Prefer email? <a id="rsvpMailto" href="#" style="border-bottom:1px solid var(--moss); color:var(--moss);">Send your RSVP directly by email</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="nav-mark">I &amp; R</div>
+  <p>February 14, 2027 &nbsp;·&nbsp; Tagaytay, Philippines</p>
+  <p>Made with love for our wedding day.</p>
+  <a href="#top" class="back-top">Back to Top</a>
+</footer>
+
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script src="premium.js"></script>
+</body>
+</html>
